@@ -1,0 +1,300 @@
+@import url("https://fonts.cdnfonts.com/css/sniglet");
+@import url("https://fonts.cdnfonts.com/css/imprima");
+@import url("https://fonts.cdnfonts.com/css/roboto-infanity");
+@import url("https://fonts.cdnfonts.com/css/inter?styles=29126");
+
+body {
+    background: rgba(8, 2, 48, 0.12);
+}
+.cont-global {
+    width: 100%;
+    display: flex;
+}
+
+/*!------------------------------------------- GLOBAL CONTAINER  */
+.cont-menu {
+    background: linear-gradient(
+        0deg,
+        #971b13 50%,
+        rgba(36, 3, 0, 0.85) 100%,
+        rgba(126, 17, 10, 0.5) 100%
+    );
+    width: 14%;
+    height: 100vh;
+    border-radius: 0px 15px 15px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.cont-view {
+    width: 86%;
+    height: 100vh;
+    padding: 0rem 1.5rem;
+}
+
+/*!------------------------------------------- MENU SIDE  */
+/**----------------------- GLOBAL CONFIG  */
+.menu-top {
+    height: 40%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.menu-mid {
+    background: rgba(255, 255, 255, 0.1);
+    height: 55%;
+    width: 100%;
+    padding: 0.2rem 0rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.menu-bot {
+    height: 5%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.NavbarMobile {
+    display: none;
+}
+
+/**----------------------- TOP SIDE  */
+.btn-setting {
+    align-self: flex-end;
+    margin: 0.5rem 1rem 2rem 0rem;
+}
+.icon-setting {
+    color: aliceblue;
+}
+.icon-setting:hover {
+    color: rgb(33, 33, 33);
+}
+
+.cont-profile-border {
+    width: 7rem;
+    height: 7rem;
+    padding: 0.4rem;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+    border: 2px solid white;
+}
+.cont-foto {
+    background-color: rgb(251, 251, 251);
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 75px 45px rgba(0, 0, 0, 0.4);
+}
+.profile-foto {
+    width: 100%;
+    text-align: center;
+}
+
+.user-name {
+    color: white;
+    font-size: 20px;
+    font-family: "Sniglet", sans-serif;
+}
+
+.user-email {
+    color: rgb(0, 0, 0);
+    font-family: "Imprima", sans-serif;
+    font-weight: bold;
+}
+/**----------------------- MID SIDE  */
+.btn-menu {
+    width: 100%;
+    padding-left: 2rem;
+    display: flex;
+    align-items: center;
+}
+.btn-menu:hover {
+    background: rgba(0, 0, 0, 0.5);
+}
+.icon-btn-menu {
+    color: white;
+    margin-right: 1rem;
+}
+.btn-menu span {
+    margin: 0.8rem 0rem;
+    color: white;
+    font-size: 20px;
+}
+/**----------------------- BOT SIDE  */
+.logo-foto {
+    width: 75%;
+}
+/*!------------------------------------------- VIEWS SIDE  */
+/**----------------------- VIEW TITLE  */
+.cont-header {
+    width: 100%;
+    height: 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.title_view {
+    /* background: linear-gradient(
+        90deg,
+        #971b13 50%,
+        rgba(36, 3, 0, 1) 100%,
+        rgba(126, 17, 10, 0.5) 100%
+    ); */
+    margin-top: 0.5rem;
+    padding: 0.5rem;
+    color: rgb(0, 0, 0);
+    /* border-radius: 10px 50px 50px 10px; */
+    /* border-left: 3px solid #971b13; */
+    border-bottom: 3px solid #971b13;
+    width: 90%;
+    font-size: 40px;
+    font-family: "Inter", sans-serif;
+}
+.btn-logout {
+    background: linear-gradient(270deg, #000 0%, rgba(0, 0, 0, 0.7) 100%);
+    width: 100%;
+    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.25);
+    color: white;
+}
+
+/**----------------------- VIEW BODY  */
+.cont-subViews {
+    width: 100%;
+    height: 92%;
+    padding: 1rem 0rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+@media (max-width: 1300px) {
+    .cont-menu {
+        width: 15%;
+    }
+    .cont-view {
+        width: 85%;
+    }
+    .btn-menu {
+        padding-left: 0.5rem;
+    }
+    .btn-menu span {
+        margin: 0.5rem 0rem;
+        font-size: 19px;
+    }
+}
+
+@media (max-width: 1100px) {
+    .cont-menu,
+    .cont-logout {
+        display: none;
+    }
+    .cont-global {
+        height: 100vh;
+        width: 100%;
+    }
+    .cont-view {
+        width: 100%;
+        height: 100%;
+        min-height: 1000px;
+    }
+    .cont-subViews {
+        width: 100%;
+        height: 90%;
+        padding: 1rem 0rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .NavbarMobile {
+        display: inherit;
+        position: fixed;
+        right: 0.2rem;
+        top: 1rem;
+        border-radius: 10px;
+        background: linear-gradient(
+            90deg,
+            #971b13 10%,
+            rgba(14, 2, 0, 0.85) 100%,
+            rgba(126, 17, 10, 0.5) 100%
+        );
+        z-index: 3;
+    }
+}
+
+@media (max-width: 650px) {
+    .cont-view {
+        padding: 0rem 0.8rem;
+    }
+    .title_view {
+        padding: 0.5rem 0rem;
+        width: 35%;
+        text-align: center;
+        font-size: 22px;
+        font-family: "Inter", sans-serif;
+    }
+    .NavbarMobile {
+        display: inherit;
+        position: fixed;
+        right: 0.2rem;
+        top: 1rem;
+        border-radius: 10px;
+        padding: 0.1rem;
+        z-index: 3;
+    }
+}
+
+@media screen and (orientation: landscape) {
+    @media (max-width: 1300px) {
+        .cont-global {
+            height: 100vh;
+            width: 100%;
+        }
+        .cont-menu {
+            width: 15%;
+            min-height: 750px;
+        }
+        .cont-view {
+            width: 85%;
+            height: 100%;
+            min-height: 750px;
+        }
+        .cont-subViews {
+            width: 100%;
+            height: 90%;
+            padding: 1rem 0rem;
+        }
+    }
+
+    @media (max-width: 1100px) {
+        .cont-menu,
+        .cont-logout {
+            display: none;
+        }
+        .cont-global {
+            height: 100vh;
+            width: 100%;
+        }
+        .cont-view {
+            width: 100%;
+            height: 100%;
+            min-height: 750px;
+        }
+        .cont-subViews {
+            width: 100%;
+            height: 90%;
+            padding: 1rem 0rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+    }
+}

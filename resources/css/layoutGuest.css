@@ -1,0 +1,153 @@
+.cont-guest {
+    background: URL("/images/LoginBG.svg") no-repeat right;
+    background-size: 100%;
+    width: 100%;
+    height: 100vh;
+    min-height: 650px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*!------------------------------------------- REGISTER PAGE */
+.cont-form-guest {
+    background-color: white;
+    width: 60%;
+    height: 60%;
+    display: flex;
+    box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.15);
+    border-radius: 15px;
+}
+.title-guest {
+    text-align: center;
+    font-size: 35px;
+    font-family: "Roboto Infanity", sans-serif;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+.cont-image-guest {
+    background: linear-gradient(
+        0deg,
+        #971b13 50%,
+        rgba(36, 3, 0, 0.85) 100%,
+        rgba(126, 17, 10, 0.5) 100%
+    );
+    width: 50%;
+    border-radius: 15px 0px 0px 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.guest-foto {
+    width: 75%;
+}
+.form-guest-register {
+    width: 50%;
+    padding: 1rem;
+    border-radius: 0px 15px 15px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.cont-inputs-doble {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.inputs-guest {
+    background: white;
+    border-radius: 10px;
+    width: 49%;
+}
+.inputs-guest-email {
+    background: white;
+    width: 100%;
+}
+
+/*!------------------------------------------- LOGIN PAGE */
+@media (max-width: 1100px) {
+    .cont-guest {
+        background: URL("/images/Background_Mobile.svg") no-repeat center;
+        background-size: 100%;
+        min-height: 650px;
+    }
+    .cont-form-guest {
+        background-color: white;
+        width: 90%;
+        height: 50%;
+        display: flex;
+        box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.15);
+        border-radius: 15px;
+    }
+}
+
+@media (max-width: 650px) {
+    .cont-guest {
+        background: URL("/images/Background_Mobile.svg") no-repeat center;
+        background-size: 130%;
+        width: 100%;
+        height: 100vh;
+        min-height: 750px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .cont-form-guest {
+        background-color: white;
+        width: 95%;
+        height: 75%;
+        display: flex;
+        flex-direction: column;
+        box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.15);
+        border-radius: 15px;
+    }
+    .cont-image-guest {
+        width: 100%;
+        border-radius: 15px 15px 15px 15px;
+    }
+    .guest-foto {
+        width: 55%;
+    }
+    .form-guest-register {
+        width: 100%;
+        padding: 1rem;
+        border-radius: 0px 15px 15px 0px;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .title-guest {
+        text-align: center;
+        font-size: 30px;
+        font-family: "Roboto Infanity", sans-serif;
+        font-weight: bold;
+        margin-bottom: 0.5rem;
+    }
+    .cont-inputs-doble {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 0.5rem;
+    }
+}
+
+@media screen and (orientation: landscape) {
+    @media (max-width: 1300px) {
+        .cont-guest {
+            background: URL("/images/LoginBG.svg") no-repeat center;
+            background-size: 150%;
+            min-height: 650px;
+        }
+        .cont-form-guest {
+            background-color: white;
+            width: 90%;
+            height: 75%;
+            display: flex;
+            box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.15);
+            border-radius: 15px;
+        }
+    }
+}
